@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>📕Gerenciador de Alunos</title>
+</head>
+<body>
+    <main>
+        <h1>📕Gestão de aluno</h1>
+          <form id="formPessoa">
+            <div>
+            <input type="text" id="nome" placeholder="Nome" required>
+            </div>
+
+            <div>
+            <input type="number" id="nota" placeholder="Nota" required>
+            </div>
+
+            <button type="submit" id="btnAdicionar">Adicionar</button>
+        </form>
+        <hr>
+        <section class="filtro">
+            <button type="button" id="btnAprovados">Aprovados</button>
+            <button type="button" id="btnReprovados">Reprovados</button>
+            
+        </section>
+        <section class="mensagem"></section>
+        <section class="lista">
+            
+        </section>
+    </main>
+    <section class="media">
+        <h1>Média da turma: <span id="mediaValue"></span></h1>
+    </section>
+
+<script type="module" src="js/dom.js"></script>
+</body>
+</html>
